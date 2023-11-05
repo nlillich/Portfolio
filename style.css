@@ -108,6 +108,11 @@ section p {
     padding: 10px;
 }
 
+.img-6  {
+    width: 280px;
+    height: 230px;
+    padding: 10px;
+}
 
 .borders {
     border-bottom: 2px solid #341d5c;
