@@ -41,6 +41,26 @@ header {
 
 .list {
     text-align: right;
+    display: flex;
+}
+
+.text-only {
+    background-color: transparent; 
+    border: none;
+    color : white;
+    cursor: pointer; 
+    padding: 0; 
+    font-size: 16px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.text-only-2 {
+    background-color: transparent; 
+    border: none;
+    border-bottom-style: dotted;
+    cursor: pointer; 
+    padding: 0; 
+    font-size: 16px;
 }
 
 header ul {
