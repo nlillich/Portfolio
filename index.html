@@ -4,97 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header>
-        <ul class="left">
-            <li class="left">Nathan Lillich</li>
-            <li class="position">Computer Science at Kansas State University</li>
-        </ul>
-        <ul class="list">
-            <li>
-                <form action="Resume.html" method="get">
-                    <button type="submit" class="text-only">Resume</button>
-                </form>
+
+    <nav>
+        <div class="nav-logo">
+            <a href="#">
+                <img src="images/logo.jpeg">
+            </a>
+        </div>
+
+        <ul class="nav-links">
+            <li class="link2">
+                <span>
+                    <form action="resume.html" method="get">
+                        <button type="submit" class="fa fa-file fa-lg"><span>RESUME</span></button>
+                    </form>
+                </span></a>
             </li>
-            <li><a href="mailto:nlillich@ksu.edu"></a>nlillich@ksu.edu</li>
+            <p>|</p>
+            <li class="link2"><a href="https://github.com/nlillich?tab=repositories" class="fa fa-github-square fa-lg"><span>GITHUB</span></a></li>
+            <p>|</p>
+            <li class="link2"><a href="https://www.linkedin.com/in/nathan-lillich-951744304" class="fa fa-linkedin-square fa-lg"><span>LINKEDIN</span></a></li>
         </ul>
+    </nav>
+    <header class="container">
+        <div class="img">
+            <img src="images/profile-photo.png">
+        </div>
+       <div class="content">
+        <h2>Hey! I'm <span>Nate Lillich</span></h2>
+        <h3>CS Student and Software Engineer</h3>
+        <p>
+            Welcome to my portfolio! As a senior studying computer science at 
+            Kansas State University, I have spent the past few years creating a lot of exciting programs. 
+            Within my portfolio is some of my favorite programs I have developed that help to showcase my 
+            skills and experiences. My goal is to continue my passion of developing programs after graduation.
+        </p>
+       </div>
     </header>
 
-    <section id="portfolio">
-        <div class="container">
-            <h1 class="borders">Introduction</h1>
-                <div class="description">
-                    <p>
-                        Hello there! I am Nate and this is my portfolio. As a senior studying computer science at 
-                        Kansas State University, I have spent the past few years creating a lot of exciting programs. 
-                        Within my portfolio is some of my favorite programs I have developed that help to showcase my 
-                        skills and experiences. My goal is to continue my passion of developing programs after graduation.
+    <section id="portfolio" class="container">
+        <h1>Projects</h1>
+        <div class="projects">
+            <div class="project-1">
+                <p>Simple Microsoft Windows Forms Alarm Clock</p>
+            </div>
+            <div class="popup" id="popup-1">
+                <div class="popup-content" id="popup-content">
+                    <span class="close" onclick="closePopup('popup-1')" id="close">&times;</span>
+                    <h2 id="project-title">Simple Microsoft Windows Forms Alarm Clock</h2>
+                    <p id="project-description">
+                        Alarm clock windows forms application made with C# that allows the user to add and edit alarms as well as 
+                        change the alarm sound and snooze an alarm. Project follows the MVC design pattern with the use of delegates 
+                        to separate the three components from one another.
                     </p>
+                    <div class="portfolio-item">
+                        <img src="images/display.png" alt="display" class="img-1">
+                        <img src="images/editing.png" alt="editing" class="img-3">
+                        <img src="images/diagram.png" alt="diagram" class="img-2">
+                    </div>
                 </div>
-        </div>
-        <div class="container">
-            <h1>Portfolio</h1>
-            <h2 class="borders">Simple Microsoft Windows Forms Alarm Clock</h2>
-            <div class="portfolio-item">
-                <img src="images/display.png" alt="display" class="img-1">
-                <img src="images/editing.png" alt="editing" class="img-3">
-                <img src="images/diagram.png" alt="diagram" class="img-2">
             </div>
-            <div class="description">
-                <p>Alarm clock windows forms application made with C# that allows the user to add and edit alarms as well as 
-                    change the alarm sound and snooze an alarm. Project follows the MVC design pattern with the use of delegates 
-                    to separate the three components from one another.
-                </p>
+            <div class="project-2">
+                <p>Sudoku Solver Using Simulated Annealing</p>
             </div>
-        </div>
-        <div class="container">
-            <h2 class="borders">Sudoku Solver Using Simulated Annealing</h2>
-            <div class="portfolio-item">
-                <img src="images/InitialPuzzle.png" alt="placeholder" class="img-4">
-                <img src="images/TemperatureExample.png" alt="placeholder" class="img-5">
-                <img src="images/FinalResult.png" alt="Final Result" class="img-4">
-                <img src="images/reheatingExample1.png" alt="placeholder" class="img-5">
+            <div class="popup" id="popup-2">
+                <div class="popup-content" id="popup-content">
+                    <span class="close" onclick="closePopup('popup-2')" id="close">&times;</span>
+                    <h2 id="project-title">Sudoku Solver Using Simulated Annealing</h2>
+                    <p id="project-description">
+                        Sudoku solver that utilizes the functionality of simulated annealing to search for local solutions 
+                        until a certain temperature is reached or a final solution is found. The program runs fully in the console
+                        and is written using python. A reheating case is implemented for if the algorithm gets trapped at 
+                        a local maximum before the final solution is found.
+                    </p>
+                    <div class="portfolio-item">
+                        <img src="images/InitialPuzzle.png" alt="placeholder" class="img-4">
+                        <img src="images/TemperatureExample.png" alt="placeholder" class="img-5">
+                        <img src="images/FinalResult.png" alt="Final Result" class="img-4">
+                        <img src="images/reheatingExample1.png" alt="placeholder" class="img-5">
+                    </div>
+                </div>
             </div>
-            <div class="description">
+            <div class="project-3">
+                <p>Pathfinder Maze Solver</p>
+            </div>
+            <div class="popup" id="popup-3">
+                <div class="popup-content" id="popup-content">
+                    <span class="close" onclick="closePopup('popup-3')" id="close">&times;</span>
+                    <h2 id="project-title">Pathfinder Maze Solver</h2>
+                    <p id="project-description">
+                        Python program that utilizes four different search algorithms to solve various mazes. Program runs 
+                        fully within the terminal and uses hardcoded text files to populate the mazes. The four search algorithms 
+                        implemented are random search, depth-first search, breadth-first search, and greedy search.
+                    </p>
+                    <div class="portfolio-item">
+                        <img src="images/randomSearch.png" alt="placeholder" class="img-6">
+                        <img src="images/DFS.png" alt="placeholder" class="img-6">
+                        <img src="images/BFS.png" alt="placeholder" class="img-6">
+                        <img src="images/greedySearch.png" alt="placeholder" class="img-6">
+                    </div>
+                </div>
+            </div>
+            <div class="project-4">
                 <p>
-                    Sudoku solver that utilizes the functionality of simulated annealing to search for local solutions 
-                    until a certain temperature is reached or a final solution is found. The program runs fully in the console
-                    and is written using python. A reheating case is implemented for if the algorithm gets trapped at 
-                    a local maximum before the final solution is found.
-                </p>
-            </div>
-        </div>
-        <div class="container">
-            <h2 class="borders">Pathfinder Maze Solver</h2>
-            <div class="portfolio-item">
-                <img src="images/randomSearch.png" alt="placeholder" class="img-6">
-                <img src="images/DFS.png" alt="placeholder" class="img-6">
-                <img src="images/BFS.png" alt="placeholder" class="img-6">
-                <img src="images/greedySearch.png" alt="placeholder" class="img-6">
-            </div>
-            <div class="description">
-                <p>
-                    Python program that utilizes five different search algorithms to solve various mazes. Program runs 
-                    fully within the terminal and uses hardcoded text files to populate the mazes. The five search algorithms 
-                    implemented are random search, depth-first search, breadth-first search, greedy search, and A* search.
-                </p>
-            </div>
-        </div>
-        <div class="container">
-            <h2 class="borders">Technical Writing Progress Report</h2>
-            <div class="portfolio-item">
-                <form action="ProgressReport.html" method="get">
-                    <button type="submit" class="text-only-2">Click here to read full report!</button>
-                </form>
-            </div>
-            <div class="description">
-                <p>
-                    The purpose of this progress report was to update an audience of both professionals and executives as to how 
-                    the project was currently going and what progress had been made so far. Also included is information found from
-                    the research and any issues run into throughout the process. The main goal of the paper was to learn how to professionally
-                    address an executive audience in a technical writing format.
+                    Technical Writing Progress Report
                 </p>
             </div>
         </div>
@@ -102,8 +123,10 @@
 
     <footer>
         <div class="container">
-            <p>2023 Nathan Lillich</p>
+            <p>&copy;2024 Nathan Lillich</p>
+            <p><span>Email</span>: lillnate7@gmail.com</p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
